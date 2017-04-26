@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+		<!-- App -->
+		<script src="js/app.js"></script>
+
+		<!-- Cordova -->
+		<script src="cordova.js"></script>
+
+		<!-- Jquery -->
+		<script src="js/jquery.min.js"></script>
+		
+		<!-- Jquery Mobile -->
+		<link rel="stylesheet" href="css/jquery.mobile.min.css">
+		<link rel="stylesheet" href="css/custom.min.css" />
+  	<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+		<script src="js/jquery.mobile.min.js"></script>
+
+	</head>
+	<body onload="init()">
+		<div data-role="page" id="main">
+			<div data-role="header">
+				<h1>Order</h1>
+			</div>
+			<div data-role="main" class="ui-content">
+
+				<label for="text-basic">To:</label>
+				<input type="text" name="text-basic" id="text-basic" value="" placeholder="Customer name and surname">
+
+				<label for="date">Date:</label>
+				<input type="date" name="date" id="date" value="">
+
+				<label for="select-product" class="select">Product:</label>
+				<select name="select-product" id="select-product" data-native-menu="false" data-icon="grid" data-iconpos="left">
+				    <option>Choose a product:</option>
+				    <optgroup label="Beef">
+				        <option value="whooper">Whooper</option>
+				        <option value="whooperDouble">Double Whooper</option>
+				        <option value="whooperTriple">Triple Whooper</option>
+				        <option value="whooperJr">Whooper JR</option>
+				    </optgroup>
+				    <optgroup label="Chicken">
+				        <option value="chicnCrisp">Chic'n Crisp</option>
+				        <option value="spicyTendercrisp">Spicy Tendercrisp</option>
+				    </optgroup>
+				</select>
+
+				<label for="slider-fill">Quantity:</label>
+				<input type="range" name="slider-fill" id="slider-fill" value="1" min="1" max="10" data-highlight="true">
+
+				<div style="text-align: center;">
+					<a href="#" class="ui-btn ui-btn-inline ui-icon-check ui-btn-icon-left">Approve</a>
+					<a href="#" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-right">Reject</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
